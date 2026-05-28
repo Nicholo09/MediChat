@@ -276,16 +276,32 @@ div[data-testid="stButton"] > button:hover {
 }
 
 /* Chat input pill */
+[data-testid="stChatInput"] {
+    background: white !important;
+    border-radius: 50px !important;
+}
+[data-testid="stChatInput"] > div {
+    background: white !important;
+    border-radius: 50px !important;
+    border: 1.5px solid #b2dac8 !important;
+    box-shadow: 0 2px 10px rgba(11,109,81,0.08) !important;
+    padding: 0.1rem 0.5rem !important;
+}
 [data-testid="stChatInputTextArea"] {
     font-family: 'DM Sans', sans-serif !important;
     font-size: 0.93rem !important;
-}
-div[data-testid="stChatInput"] > div {
-    border-radius: 50px !important;
-    border: 1.5px solid #b2dac8 !important;
     background: white !important;
-    box-shadow: 0 2px 10px rgba(11,109,81,0.08) !important;
-    padding: 0.1rem 0.5rem !important;
+    color: #163a2b !important;
+    caret-color: #0b6d51 !important;
+}
+[data-testid="stChatInputTextArea"]::placeholder {
+    color: #8aad9b !important;
+    opacity: 1 !important;
+}
+[data-testid="stChatInputTextArea"]:focus {
+    background: white !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 button[data-testid="stChatInputSubmitButton"] {
     background: #0b6d51 !important;
